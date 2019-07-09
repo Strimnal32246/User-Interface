@@ -1,21 +1,89 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,44 +91,275 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+/* header */
+.container {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid red;
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Felipa', cursive;
+}
+
+header {
+	width: 100%;
+	display: inline-block;
+}
+
+header nav {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: lightpink;
+	overflow: hidden;
+	position: fixed;
+	/* Set the navbar to fixed position */
+}
+
+header nav a {
+	text-decoration: none;
+	color: #B0B0B0;
+	text-align: center;
+	padding: 15px;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	color: purple;
+}
+
+header nav a:first-child {
+	margin-left: 0;
+}
+
+header nav a:last-child {
+	margin-right: 0;
+}
+
+Header .logo {
+	margin-left: 640px;
+	margin-top: 20px;
+}
+
+.header-content {
+	display: inline-block;
+	margin: auto;
+	border: 1px;
+	padding: 1px;
+}
+
+.header-img {
+	display: block;
+	display: inline-block;
+	margin: auto;
+	border: 1px;
+	padding: 1px;
+}
+
+h1 {
+	display: block;
+	width: 400px;
+	margin: auto;
+	border: 1px;
+	padding: 1px;
+	font-size: 80px;
+}
+
+h2 {
+	display: block;
+	margin: auto;
+	width: 400px;
+	border: 1px;
+	padding: 1px;
+	font-size: 20px;
+}
+
+.started {
+	display: inline-block;
+	margin-top: 72px;
+}
+
+.started .started-text {
+	display: inline-block;
+	font-size: 72px;
+	align-items: center;
+	margin-top: 50px;
+	padding: 0px 75px;
+}
+
+.started .started-text button {
+	display: inline-block;
+	border: 1px black;
+	background: white;
+	width: 170px;
+	height: 32px;
+	margin-top: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+}
+
+.started .started-text button:hover {
+	background: black;
+	color: white;
+}
+
+.started img {
+	display: inline-block;
+	margin-top: 69px;
+}
+
+.main-content {
+	display: inline-block;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 50px;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.main-content.middle-img {
+	display: block;
+	margin-right: 10px 5px 5px 10px;
+	width: 100%;
+}
+
+.main-content .top-content {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.main-content .top-content .text-content {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
+}
+
+.main-content .bottom-content {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.main-content .bottom-content .text-content {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+}
+
+
+p {
+	display: inline-block;
+	margin: auto;
+	width: 400px;
+	border: 1px;
+	padding: 1px;
+	font-family: 'Cute Font', cursive;
+}
+
+.contact p {
+	font-family: 'Cute Font', cursive;
+	margin: 20px 0;
+}
+
+.contact {
+	margin-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+}
+
+.contact a:hover {
+	color: #3c373b;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 16px;
+}
